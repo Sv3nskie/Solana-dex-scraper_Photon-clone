@@ -58,6 +58,15 @@ This ensures you always have **the full picture of market activity** in real-tim
 
 ---
 
+## 🖥 Tech Stack
+
+- **Language** → Node.js + TypeScript  
+- **Database** → MongoDB (for storing pool & market data)  
+- **Data Streaming** → gRPC + RPC WebSockets  
+- **Deployment** → Works on any standard Node.js environment  
+
+---
+
 ## 🖼 Screenshots
 
 ### New Pair Page
@@ -72,8 +81,8 @@ This ensures you always have **the full picture of market activity** in real-tim
 
 We offer two options:  
 
-- **As-Is Access** → Use the scraper with default configuration for as cheap as 1k USD
-- **Customized Deployment** → Tailored filters, integrations, and performance tweaks for your workflow & UI/API - CONTACT ME (Start at 5k USD)
+- **As-Is Access** → Use the scraper with default configuration for as cheap as 1k USD  
+- **Customized Deployment** → Tailored filters, integrations, and performance tweaks for your workflow & UI/API - CONTACT ME (Starts at 5k USD)  
 
 ---
 
