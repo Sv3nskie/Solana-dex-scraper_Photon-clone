@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Solana DEX Scraper — Photon-Style Data</title>
+    <meta
+      name="description"
+      content="A high-performance Solana DEX scraper designed to replicate and extend Photon's style of market data. Ultra-fast, gRPC+RPC, real-time feeds."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./images/favicon.ico" />
+  </head>
+  <body>
+    <div class="bg-grid"></div>
+    <header class="site-header">
+      <div class="container">
+        <a href="#" class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">Solana DEX Scraper</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#features">Features</a>
+          <a href="#protocols">Protocols</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#charts">Charts</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact" class="btn small">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="title text-balance">
+              Solana DEX Scraper
+              <span class="accent">Photon‑Style Data</span>
+            </h1>
+            <p class="lead">
+              A high‑performance Solana DEX scraper designed to replicate and extend Photon’s style of market data.
+              Built in JavaScript with <strong>gRPC + RPC</strong> for maximum efficiency.
+            </p>
+
+            <div class="cta">
+              <a href="#pricing" class="btn">Get Access</a>
+              <a href="#how-it-works" class="btn ghost">How it works</a>
+            </div>
+
+            <ul class="hero-bullets">
+              <li><span class="dot"></span> Process an entire Solana block in under <strong>60ms</strong></li>
+              <li><span class="dot"></span> Minimal RPC usage — most data streamed via <strong>gRPC</strong></li>
+              <li><span class="dot"></span> Built for dashboards, bots, and real‑time analytics</li>
+            </ul>
+
+            <div class="stats reveal">
+              <div class="stat">
+                <div class="stat-number" data-countup="60" data-suffix="ms">&nbsp;</div>
+                <div class="stat-label">Block Parse Time</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number" data-countup="4">&nbsp;</div>
+                <div class="stat-label">Major DEXes Covered</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number" data-countup="100" data-suffix="%">&nbsp;</div>
+                <div class="stat-label">Real‑Time Events</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="previews">
+             <article class="card preview reveal">
+              <div class="card-head">
+                <h3>New Pair Page</h3>
+              </div>
+              <div class="preview-media">
+                <div class="skeleton" role="img" aria-label="New Pair Page preview loading"></div>
+                <img
+                  id="newPairImg"
+                  class="preview-img"
+                  alt="New Pair Page UI preview"
+                  loading="lazy"
+                  data-src="./images/new-pair.png"
+                />
+              </div>
+              <p class="muted">
+                Fresh markets the moment they launch with context you can trade on.
+              </p>
+            </article>
+
+            <article class="card preview reveal">
+              <div class="card-head">
+                <h3>Pair Data Page</h3>
+              </div>
+              <div class="preview-media">
+                <div class="skeleton" role="img" aria-label="Pair Data Page preview loading"></div>
+                <img
+                  id="pairDataImg"
+                  class="preview-img"
+                  alt="Pair Data Page UI preview"
+                  loading="lazy"
+                  data-src="./images/pair-data.png"
+                />
+              </div>
+              <p class="muted">
+                Detailed live stats on tracked markets: swaps, liquidity, and positions.
+              </p>
+            </article>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <header class="section-head reveal">
+            <h2 class="section-title">Performance that scales</h2>
+            <p class="muted">
+              Ultra‑fast, plug‑and‑play, and designed for real‑time trading dashboards, bots, and analytics.
+            </p>
+          </header>
+
+          <div class="features-grid">
+            <div class="feature reveal">
+              <span class="feature-mark glow"></span>
+              <h3>Ultra‑Fast</h3>
+              <p>Full block parsed in <strong>&lt;60ms</strong> with low‑latency feeds.</p>
+            </div>
+            <div class="feature reveal">
+              <span class="feature-mark glow"></span>
+              <h3>Plug &amp; Play</h3>
+              <p>Works out‑of‑the‑box with any gRPC/RPC endpoint and standard Node envs.</p>
+            </div>
+            <div class="feature reveal">
+              <span class="feature-mark glow"></span>
+              <h3>Smart Design</h3>
+              <p>Minimal RPC overhead — all critical data streamed live via gRPC.</p>
+            </div>
+            <div class="feature reveal">
+              <span class="feature-mark glow"></span>
+              <h3>Complete Tracking</h3>
+              <p>Swaps, liquidity events, and new pool creation across supported DEXes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="protocols" class="section">
+        <div class="container">
+          <header class="section-head reveal">
+            <h2 class="section-title">Supported Protocols</h2>
+            <p class="muted">Comprehensive coverage across major Solana DEXes.</p>
+          </header>
+
+          <div class="protocols reveal">
+            <span class="pill">Raydium — AMM, CPMM, CLMM</span>
+            <span class="pill">Pump.fun — Bonding Curve, AMM</span>
+            <span class="pill">Orca — Whirlpool (WP)</span>
+            <span class="pill">Meteora — DAMM, DLMM, V2</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="section">
+        <div class="container">
+          <header class="section-head reveal">
+            <h2 class="section-title">How it works</h2>
+            <p class="muted">Provider‑agnostic with gRPC streams and selective RPC websockets.</p>
+          </header>
+
+          <div class="how-grid">
+            <div class="how-card reveal">
+              <h3>gRPC</h3>
+              <p>Subscribe to relevant program transactions for a fast, low‑latency feed.</p>
+            </div>
+            <div class="how-card reveal">
+              <h3>RPC WebSocket</h3>
+              <p>Token Program, Metaplex, ALT Program — keeps critical data updated efficiently.</p>
+            </div>
+            <div class="how-card reveal">
+              <h3>Provider Agnostic</h3>
+              <p>Based on Shyft, works with any gRPC/RPC provider for flexibility and resilience.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="charts" class="section">
+        <div class="container">
+          <header class="section-head reveal">
+            <h2 class="section-title">Live Insights</h2>
+            <p class="muted">Real‑time performance and coverage snapshots.</p>
+          </header>
+
+          <div class="charts-grid">
+            <div class="chart-card reveal">
+              <div class="card-head">
+                <h3>Block Parse Time (ms)</h3>
+                <span class="chip alt">Realtime</span>
+              </div>
+              <canvas id="latencyChart" aria-label="Block Parse Time chart" role="img"></canvas>
+            </div>
+
+            <div class="chart-card reveal">
+              <div class="card-head">
+                <h3>DEX Coverage</h3>
+                <span class="chip alt">Snapshot</span>
+              </div>
+              <canvas id="coverageChart" aria-label="DEX Coverage chart" role="img"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section">
+        <div class="container">
+          <header class="section-head reveal">
+            <h2 class="section-title">Pricing</h2>
+            <p class="muted">Choose what fits your workflow today, scale without friction.</p>
+          </header>
+
+          <div class="pricing-grid">
+            <div class="price-card reveal">
+              <h3>As‑Is Access</h3>
+              <p class="price"><span class="currency">$</span>1,000</p>
+              <ul class="price-list">
+                <li>Default configuration</li>
+                <li>gRPC + RPC feeds</li>
+                <li>Production‑ready performance</li>
+              </ul>
+              <a href="mailto:sven.esser86@gmail.com?subject=Solana%20DEX%20Scraper%20as-is" class="btn full">Get Code</a>
+            </div>
+
+            <div class="price-card featured reveal">
+              <div class="ribbon">Popular</div>
+              <h3>Customized Deployment</h3>
+              <p class="price"><span class="currency">$</span>5,000+</p>
+              <ul class="price-list">
+                <li>Tailored filters & integrations</li>
+                <li>Workflow‑aligned UI/API</li>
+                <li>Performance tuning</li>
+              </ul>
+              <a href="mailto:sven.esser86@gmail.com?subject=Solana%20DEX%20Scraper%20custom" class="btn full">Contact</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact reveal">
+          <h2 class="section-title">Get in touch</h2>
+          <p class="muted">
+            Ready to integrate ultra‑fast Solana market data into your stack? Let’s talk.
+          </p>
+
+          <div class="contact-actions">
+            <a class="btn" href="mailto:sven.esser86@gmail.com?subject=Solana%20DEX%20Scraper%20Inquiry">Email Us</a>
+            <button class="btn ghost" id="copyEmailBtn" aria-label="Copy email to clipboard">
+              Copy Email
+            </button>
+          </div>
+          <p class="tiny muted" id="copyStatus" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="tiny">
+          © <span id="year"></span> Solana DEX Scraper — Ultra‑fast, real‑time market data across Solana DEXes.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
